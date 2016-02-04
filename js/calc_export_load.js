@@ -2,6 +2,14 @@
  * Created by Mesogene on 2016/1/26.
  */
 $(function(){
+    $('.bottom-right').notify({
+        type: 'success',
+        message: {
+            html: '<strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning：</strong><div>Please use the support HTML5 browser，for example Chrome, Firefox and IE10 etc.</div>',
+            text: false
+        },
+        fadeOut: { enabled: true, delay: 5000 }
+    }).show();
     $('#export').click(function(){
         $('#show').tableExport({
             separator: ',',
